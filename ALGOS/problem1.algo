@@ -14,7 +14,7 @@ BEGIN
             BREAK
         END_IF
     END_FOR
-            sum1 := sum + i
+            sum1 := sum + Set 1[i]
     FOR j FROM 0 TO 4 DO
         count = 0
         FOR i FROM 0 TO 3 DO
@@ -22,9 +22,9 @@ BEGIN
             BREAK
         END_IF
     END_FOR
-        sum2 := sum + j
+        sum2 := sum + Set 1[i]
     END_IF
-    sum := sum1 + sum2
+    sum := sum2
     
     Write("The sum is:" sum)
 END
